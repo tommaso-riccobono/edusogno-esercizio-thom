@@ -1,0 +1,170 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html, body {
+    height: 100vh;
+    background-color: #D9E5F3;
+    overflow: hidden;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}    
+
+h1{ 
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #134077;
+    margin: 70px 0 20px;
+    z-index: 1000;
+}
+
+h2{
+    text-align: center;
+    color: #134077;
+    margin-bottom: 20px;
+}
+
+
+
+/* START WRAPPER */
+.wrapper {
+    height: calc(100vh - 160px);/* 100% - (header-height+header-margin)*/
+}
+
+
+
+/* START REGISTER */
+.register {
+    position: absolute;
+    left: calc(50vw - 20vw);
+    width: 40vw;
+    max-height: 60vh;
+    background-color: #FFFFFF;
+    border: 1px solid #134077;
+    border-radius: 19px;
+    padding: 10px 15px 40px;
+    overflow: auto;
+    z-index: 1000;
+    text-align: center;
+}
+
+form.account{
+    display: flex;
+    flex-direction: column;
+    margin:20px;
+}
+
+form.account label {
+    text-align: left;
+}
+
+form.account input {
+    border: none;
+    border-bottom: 1px solid #2D224C;
+    margin: 10px 0 20px 0;
+}
+.togglePwd{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.togglePwd input{
+    width: 100%;
+}
+
+.togglePwd i{
+    cursor: pointer;
+    color: #0057FF;
+    margin: 0 10px 15px;
+}
+
+.register input[type=submit]{
+    display: block;
+    width: calc(100% - 40px);
+    padding: 20px;
+    margin: 0 20px 20px 20px;
+    background: #0057FF;
+    border-radius: 11px;
+    text-transform:uppercase; 
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.log-register{
+    color: #2D224C;
+}
+
+.log-register:hover{
+    color: slategray;
+}
+
+/* END REGISTER */
+
+/* START PRIVATE*/
+
+.log-out{
+    margin-top:20px;
+    text-align: center;
+}
+.private {
+    position: absolute;
+    left: calc(50vw - 40vw);
+    width: 80vw;
+    max-height: 60vh;
+    padding: 15px;
+    overflow: auto;
+    z-index: 1000;
+}
+
+.events {
+    display: flex;
+    justify-content: center;
+}
+
+.event {
+    padding: 40px 20px 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #134077;
+    border-radius: 19px;
+    margin:0 20px;
+}
+
+.event button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #0057FF;
+    border-radius: 11px;
+    text-transform:uppercase; 
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.date{
+    text-align: center;
+    font-size: 13;
+    color: #CCCCCC;
+}
+
+/* END PRIVATE*/
+
+/* END WRAPPER */
+
+/* ERROR STYLE*/
+
+p.error{
+    background-color: lightcoral;
+}
+
+@media only screen and (max-width: 600px) {
+    .register {
+      width: 95vw;
+      left: 2.5vw;
+    }
+  }
